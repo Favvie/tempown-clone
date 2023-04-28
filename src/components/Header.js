@@ -1,14 +1,18 @@
 import React, {useState} from 'react'
 import Logo from '../assets/logo.svg'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { IoCloseOutline } from 'react-icons/io5'
+import { IoCloseOutline, IoLogoWhatsapp, IoCallOutline } from 'react-icons/io5'
+import {BsChatRightDots} from 'react-icons/bs'
+
 
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     
-  return (
-      <header className='flex w-full justify-between px-6 py-3 items-center'>
+    return (
+      
+        <header className='relative'>
+            <div className='flex w-full justify-between px-6 py-3 items-center max-w-[1440px] mx-auto'>
           <img src={Logo} alt="tempown_logo" className='h-6 w-auto md:h-8 lg:h-9' />
 
           <nav className='hidden md:flex gap-10'>
@@ -45,7 +49,14 @@ const Header = () => {
                 <a href='/' className='text-[#6b7280] text-sm self-center'>Existing member? <span className='font-semibold  text-primary'>Sign In</span></a>
                 </nav>
                
-			</div>
+                </div>
+            </div>
+            
+            <div className='right-0 bg-white w-8 p-6 pl-4 space-y-4 text-primary text-2xl  pr-12 md:pr-8 rounded-s-xl top-[40%] translate-y-1/2 fixed z-50 shadow-2xl'>
+                <IoLogoWhatsapp className='font-bold' />
+                <BsChatRightDots />
+                <IoCallOutline />
+            </div>
     </header>
   )
 }

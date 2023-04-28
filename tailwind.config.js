@@ -10,6 +10,9 @@ module.exports = {
       },
       backgroundImage: {
         'browse-pattern': "url('../src/assets/browse.svg')",
+        'protection-image': "url('../src/assets/protection.webp')",
+        'planet-pattern': "url('../src/assets/savingplant.svg')",
+        'reeddi-cash': "url('../src/assets/affordable.webp')"
         
       }
     },
