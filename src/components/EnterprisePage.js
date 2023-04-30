@@ -1,9 +1,12 @@
 import React from 'react'
 import HeroImage from '../assets/enterprise.39f9874d.webp'
+import Header from './Header'
+import Footer from './Footer'
 
 const EnterprisePage = () => {
   return (
     <>
+      <Header/>
       <section className='mt-20 flex md:mt-0 md:w-[95%] md:mx-auto gap-3 container mx-auto px-4 flex-col md:flex-row'>
           <div className='flex flex-col gap-8 w-[90%] m-auto md:flex-1 lg:pt-20'>
               <h1 className='text-4xl md:text-5xl  font-semibold text-black md:leading-[50px]'>A <span className='text-primary'>smarter</span> way to <span className='text-primary'>manage</span> and <span className='text-primary'>rent out</span> your equipment</h1>
@@ -55,6 +58,7 @@ const EnterprisePage = () => {
 
         </div>
       </section>
+      <Footer />
       </>
   )
 }

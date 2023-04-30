@@ -15,10 +15,10 @@ const Header = () => {
             <div className='flex w-full justify-between px-6 py-3 items-center max-w-[1440px] mx-auto'>
           <img src={Logo} alt="tempown_logo" className='h-6 w-auto md:h-8 lg:h-9' />
 
-          <nav className='hidden md:flex gap-10'>
-              <a href='/'>Enterprise <span className='bg-[#c4ffe4] text-primary rounded-full px-3 py-2'>Coming soon</span></a>
-              <a href='/'>About</a>
-              <a href='/'>List an item</a>
+          <nav className='hidden md:flex gap-10 text-sm p-6'>
+              <a href='/enterprise' className='hover:text-primary'>Enterprise <span className='bg-[#c4ffe4] text-primary rounded-full px-3 py-2'>Coming soon</span></a>
+              <a href='/' className='hover:text-primary'>About</a>
+              <a href='/' className='hover:text-primary'>List an item</a>
           </nav>
 
           <div className='hidden md:flex gap-6 items-center'>
@@ -42,7 +42,7 @@ const Header = () => {
 				}
 			>
                 <nav className='flex flex-col gap-6 w-[100%]'>
-                <a href='/'>Enterprise <span className='bg-[#c4ffe4] text-primary rounded-full px-3 py-2'>Coming soon</span></a>
+                <a href='/enterprise'>Enterprise <span className='bg-[#c4ffe4] text-primary rounded-full px-3 py-2'>Coming soon</span></a>
                 <a href='/'>About</a>
                 <a href='/'>List an item</a>
                 <a href='/' className='text-white  w-[100%] font-semibold bg-primary text-center rounded-xl px-4 py-2 mt-6'>Get Started</a>
@@ -53,9 +53,9 @@ const Header = () => {
             </div>
             
             <div className='right-0 bg-white w-8 p-6 pl-4 space-y-4 text-primary text-2xl  pr-12 md:pr-8 rounded-s-xl top-[40%] translate-y-1/2 fixed z-50 shadow-2xl'>
-                <IoLogoWhatsapp className='font-bold' />
-                <BsChatRightDots />
-                <IoCallOutline />
+                <IoLogoWhatsapp className='cursor-pointer' />
+                <BsChatRightDots className='cursor-pointer'/>
+                <IoCallOutline className='cursor-pointer'/>
             </div>
     </header>
   )
