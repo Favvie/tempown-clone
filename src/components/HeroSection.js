@@ -72,7 +72,7 @@ const HeroSection = () => {
                         <img loading='lazy' src={`${images[currentIndex]}`} alt="hero_image w-full h-full" />
                     </div>
                 </div>
-                    <span className='flex items-center gap-2 bg-white max-w-48 w-[15%] mx-auto mt-10 rounded-t-2xl rounded justify-center self-center text-[#616564] p-2 text-xs font-semibold'>A product of <img loading='lazy' src={Reeddi} alt="Reddi" /> <BsArrowUpRight className='font-semibold' /></span>
+                    <span className='flex items-center gap-2 bg-white max-w-48 w-[50%] md:w-[15%] mx-auto mt-10 rounded-t-2xl rounded justify-center self-center text-[#616564] p-2 text-xs font-semibold'>A product of <img loading='lazy' src={Reeddi} alt="Reddi" /> <BsArrowUpRight className='font-semibold' /></span>
                     </div>
             </section>
             
